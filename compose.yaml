@@ -4,14 +4,17 @@ services:
   jenkins:
     image: myjenkins:1
     environment:
-      - MYSQL_ROOT_PASSWORD=mysecretpassword
-      - MYSQL_DATABASE=mydatabase
+      - DOCKER_HOST=tcp://docker:2376
+      - DOCKER_CERT_PATH=/certs/clien
+      - DOCKER_TLS_VERIFY=1
     ports:
       - "8080:8080"
+      - "50000:50000"
     networks:
       - jenkins_net
     volumes:
       - jenkins_data:/app/data
+      - jenkins_certs:/certs/client:ro
 
   dockersocat:
     image: alpine/socat:latest
@@ -22,3 +25,4 @@ networks:
 
 volumes:
   jenkins_data:
+  jenkins_certs:
