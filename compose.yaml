@@ -3,6 +3,7 @@ version: '3.8'
 services:
   jenkins:
     image: myjenkins:1
+    environment:
       - MYSQL_ROOT_PASSWORD=mysecretpassword
       - MYSQL_DATABASE=mydatabase
     ports:
