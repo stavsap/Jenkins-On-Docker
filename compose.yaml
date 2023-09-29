@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  jenkins:
+    build:
+      context: .  # Path to the directory containing the Dockerfile
+      dockerfile: Dockerfile  # Name of the Dockerfile (if not named Dockerfile)
+    ports:
+      - "8080:8080"
+    networks:
+      - jenkins_net
+    volumes:
+      - ./jenkins_data:/app/data
+
+  dockersocat:
+    image: alpine/socat:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysecretpassword
+      - MYSQL_DATABASE=mydatabase
+    networks:
+      - jenkins_net
+
+networks:
+  jenkins_net:
+    driver: bridge
+
+volumes:
+  jenkins_data:
+  db_data:
