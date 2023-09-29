@@ -19,3 +19,9 @@ docker inspect alpine-socat | grep IPAddress
 docker rm -f jenkins-blueocean
 docker rm -f alpine-socat
 ```
+
+``` shell
+docker network rm jenkins
+docker volume rm jenkins-data
+docker volume rm jenkins-docker-certs
+```
