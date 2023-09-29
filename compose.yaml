@@ -2,9 +2,7 @@ version: '3.8'
 
 services:
   jenkins:
-    build:
-      context: .  # Path to the directory containing the Dockerfile
-      dockerfile: Dockerfile  # Name of the Dockerfile (if not named Dockerfile)
+    image: myjenkins:1
     environment:
       - MYSQL_ROOT_PASSWORD=mysecretpassword
       - MYSQL_DATABASE=mydatabase
