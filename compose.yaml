@@ -3,7 +3,6 @@ version: '3.8'
 services:
   jenkins:
     image: myjenkins:1
-    environment:
       - MYSQL_ROOT_PASSWORD=mysecretpassword
       - MYSQL_DATABASE=mydatabase
     ports:
@@ -11,15 +10,14 @@ services:
     networks:
       - jenkins_net
     volumes:
-      - ./jenkins_data:/app/data
+      - jenkins_data:/app/data
 
   dockersocat:
     image: alpine/socat:latest
 
 networks:
   jenkins_net:
-    driver: bridge
+    driver: overlay
 
 volumes:
   jenkins_data:
-  db_data:
