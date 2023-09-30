@@ -1,4 +1,6 @@
-# jenkins-docker
+# Jenkins on docker infrastructure
+
+The following will setup jenkins and jenkins agents on ubuntu host with docker. (it can work on any host with docker but the scripts are tested on ubuntu).
 
 ## Build The Custom Jenkins Docker Image
 
@@ -33,6 +35,18 @@ docker network rm jenkins
 docker volume rm jenkins-data
 docker volume rm jenkins-docker-certs
 ```
+
+# Setup Docker Cloud
+
+Go to settings and setup a Docker cloud
+
+use temaplte with the agent image
+
+``` shell
+jenkins/agent:alpine-jdk11
+```
+
+set the lable to "docker-alpine-jdk11"
 
 # Build Docker-on-Docker
 
