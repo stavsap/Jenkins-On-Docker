@@ -58,19 +58,35 @@ docker volume rm jenkins-registry-data
 
 # Setup Docker Cloud
 
-Go to settings and setup a Docker cloud
+### Go to settings and setup a Docker cloud.
 
-Define docker template with the following agent image:
+**Docker Host URI**:
+
+``` shell
+tcp://alpine-socat:2375
+```
+
+check the **Enabled** and test the connection.
+
+### Define docker template with the following:
+
+**Labels**:
+
+``` shell
+docker-alpine-jdk11
+```
+
+**Docker Image**:
 
 ``` shell
 localhost:5000/myjenkinsagent-jdk11
 ```
 
-Set the lable to "**docker-alpine-jdk11**
+# Build Docker-on-Docker use case
 
-# Build Docker-on-Docker
+If one desired to build docker images inside docker jenkins agent, do the following.
 
-After setting up Docker Cloud, in docker template settings:
+After setting up Docker Cloud, add to docker template settings:
 
 **User**:
 
