@@ -2,6 +2,12 @@
 
 The following will setup jenkins and jenkins agents on ubuntu host with docker. (it can work on any host with docker but the scripts are tested on ubuntu).
 
+## Clone this repo 
+
+``` shell
+git clone 
+``` 
+
 ## Build The Custom Jenkins Docker Image
 
 ``` shell
