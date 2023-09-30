@@ -1,0 +1,20 @@
+pipeline {
+    agent { 
+        node {
+            label 'docker-alpine-jdk11'
+            }
+      }
+    stages {
+        stage('Build') {
+            steps {
+                echo "Building..."
+                sh '''
+                whoami
+                ls /var/run
+                echo "FROM hello-world" > Dockerfile
+                docker build -t myhelloworld:latest .
+                '''
+            }
+        }
+    }
+}
