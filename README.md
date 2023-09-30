@@ -24,6 +24,22 @@ docker rm -f jenkins-blueocean
 docker rm -f alpine-socat
 ```
 
+# Build Docker-on-Docker
+
+after setting up Docker Cloud, in docker template setup mount to docker socket
+
+## Using docker agent without docker client
+
+In docker template settings
+
+- change user to "root"
+- add in the pipline step to install docker
+
+``` shell
+apk add --update --no-cache docker
+```
+
+
 ``` shell
 docker network rm jenkins
 docker volume rm jenkins-data
