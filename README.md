@@ -56,7 +56,7 @@ docker volume rm jenkins-docker-certs
 docker volume rm jenkins-registry-data
 ```
 
-# Setup Docker Cloud
+# Setup Docker Cloud Example
 
 ### Go to settings and setup a Docker cloud.
 
@@ -84,7 +84,11 @@ localhost:5000/myjenkinsagent-jdk11
 
 # Build Docker-on-Docker use case
 
-If one desired to build docker images inside docker jenkins agent, do the following.
+If one desires to build docker images inside docker jenkins agent, do not install docker inside the agent. 
+
+Mount the host docker socket into the agent instead.
+
+### Do the following:
 
 After setting up Docker Cloud, add to docker template settings:
 
