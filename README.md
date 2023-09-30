@@ -84,13 +84,15 @@ localhost:5000/myjenkinsagent-jdk11
 
 # Build Docker-on-Docker use case
 
-If one desires to build docker images inside docker jenkins agent, do not install docker inside the agent. 
+If one desires to build docker images inside docker jenkins agent, do not install docker runtime inside the agent.
 
-Mount the host docker socket into the agent instead.
+Mount the host docker socket into the agent instead and use docker client.
+
+The agent we built "**localhost:5000/myjenkinsagent-jdk11**" has a docker client already.
 
 ### Do the following:
 
-After setting up Docker Cloud, add to docker template settings:
+After setting up Docker Cloud with docker template using **localhost:5000/myjenkinsagent-jdk11**, add to docker template settings:
 
 **User**:
 
