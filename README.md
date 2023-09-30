@@ -35,15 +35,17 @@ docker build -t myjenkinsagent-jdk11 ./agent/Dockerfile
 docker tag myjenkinsagent-jdk11 localhost:5000/myjenkinsagent-jdk11
 docker push localhost:5000/myjenkinsagent-jdk11
 ```
+## For Clean Up
 
-## Stop jenkins infra.
+### Stop jenkins infra.
 
 ``` shell
 docker rm -f jenkins-blueocean
 docker rm -f alpine-socat
+docker rm -f jenkins-docker-registry
 ```
 
-## Clean network and volumes.
+### Clean network and volumes.
 
 ``` shell
 docker network rm jenkins
