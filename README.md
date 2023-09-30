@@ -99,6 +99,7 @@ After setting up Docker Cloud with docker template using **localhost:5000/myjenk
 ``` shell
 root
 ```
+**Note:** to avoid using root user in the container, define a user on the host that have access to docker run time and use the same user to run the agent.
 
 **Mounts**
 
