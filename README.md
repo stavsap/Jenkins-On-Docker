@@ -25,7 +25,7 @@ echo "---- jenkins admin password ----"
 docker exec jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
 echo "--------------------------------"
 docker run --name alpine-socat -d --restart=always --network jenkins -p 127.0.0.1:2376:2375 -v /var/run/docker.sock:/var/run/docker.sock alpine/socat tcp-listen:2375,fork,reuseaddr unix-connect:/var/run/docker.sock
-docker inspect alpine-socat | grep IPAddress
+docker run -it -d --name jenkins-docker-registry -p 5000:5000 --restart always registry:latest
 ```
 
 ## Stop jenkins infra.
