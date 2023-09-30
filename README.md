@@ -88,4 +88,10 @@ If one desires to use jenkins docker agent that is without docker client, perfor
 apk add --update --no-cache docker
 ```
 
+# Automatic Ubunutu deployment
+
+``` shell
+curl -sLS https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-clean-deploy-ubuntu.sh | bash
+```
+
 
