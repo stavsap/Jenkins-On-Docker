@@ -28,6 +28,14 @@ docker run --name alpine-socat -d --restart=always --network jenkins -p 127.0.0.
 docker run -it -d --name jenkins-docker-registry -p 5000:5000 --restart always registry:latest
 ```
 
+## Build The Custom Jenkins Docker Agent Image Into local registry
+
+``` shell
+docker build -t myjenkinsagent-jdk11 ./agent/Dockerfile
+docker tag myjenkinsagent-jdk11 localhost:5000/myjenkinsagent-jdk11
+docker push localhost:5000/myjenkinsagent-jdk11
+```
+
 ## Stop jenkins infra.
 
 ``` shell
