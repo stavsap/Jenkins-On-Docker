@@ -57,23 +57,23 @@ docker volume rm jenkins-docker-certs
 
 Go to settings and setup a Docker cloud
 
-use temaplte with the agent image
+Define docker template with the following agent image:
 
 ``` shell
 localhost:5000/myjenkinsagent-jdk11
 ```
 
-set the lable to "docker-alpine-jdk11"
+Set the lable to "docker-alpine-jdk11"
 
 # Build Docker-on-Docker
 
-After setting up Docker Cloud, in docker template settings mount to docker socket.
+After setting up Docker Cloud, in docker template settings **Mounts**:
 
 ``` shell
 type=bind,source=/var/run/docker.sock,destination=/var/run/docker.sock
 ```
 
-## Using docker agent without installed docker client
+## Using docker agent without installed docker client.
 
 If one desires to use jenkins docker agent that is without docker client, perform the following:
 
