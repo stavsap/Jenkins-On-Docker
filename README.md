@@ -58,7 +58,7 @@ Go to settings and setup a Docker cloud
 use temaplte with the agent image
 
 ``` shell
-jenkins/agent:alpine-jdk11
+localhost:5000/myjenkinsagent-jdk11
 ```
 
 set the lable to "docker-alpine-jdk11"
@@ -73,8 +73,11 @@ type=bind,source=/var/run/docker.sock,destination=/var/run/docker.sock
 
 ## Using docker agent without installed docker client
 
-- In docker template settings change user to "root"
-- In job pipeline add step to install docker
+If one desires to use jenkins docker agent that is without docker client, perform the following:
+
+- setup a docker template with you desired agent, for example **jenkins/agent-jdk11**.
+- In docker template settings change user to "root" (to be able to perform install of packages).
+- In job pipeline add step to install docker client. for example for alpine image agent:
 
 ``` shell
 apk add --update --no-cache docker
