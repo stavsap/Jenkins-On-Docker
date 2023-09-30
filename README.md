@@ -16,7 +16,7 @@ docker build -t myjenkins-blueocean:2.414.2 .
 docker network create jenkins
 ```
 
-## Build The Custom Jenkins Docker Image
+## Run jenkins image and alpine socat
 
 ``` shell
 docker run --name jenkins-blueocean -d --restart=always --network jenkins -p 8080:8080 -p 50000:50000 -v jenkins-data:/var/jenkins_home -v jenkins-docker-certs:/certs/client:ro -e DOCKER_HOST=tcp://docker:2376 -e DOCKER_CERT_PATH=/certs/client -e DOCKER_TLS_VERIFY=1 myjenkins-blueocean:2.414.2
