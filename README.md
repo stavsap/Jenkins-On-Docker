@@ -66,11 +66,19 @@ Define docker template with the following agent image:
 localhost:5000/myjenkinsagent-jdk11
 ```
 
-Set the lable to "docker-alpine-jdk11"
+Set the lable to "**docker-alpine-jdk11**
 
 # Build Docker-on-Docker
 
-After setting up Docker Cloud, in docker template settings **Mounts**:
+After setting up Docker Cloud, in docker template settings:
+
+**User**:
+
+``` shell
+root
+```
+
+**Mounts**
 
 ``` shell
 type=bind,source=/var/run/docker.sock,destination=/var/run/docker.sock
