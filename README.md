@@ -125,4 +125,9 @@ apk add --update --no-cache docker
 curl -sLS https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-clean-deploy-ubuntu.sh | bash
 ```
 
+### Clean Up
+
+``` shell
+curl -sLS https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-docker-clean-all.sh | bash
+```
 
