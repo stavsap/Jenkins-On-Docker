@@ -13,8 +13,8 @@ docker run --name alpine-socat -d --restart=always --network jenkins -p 127.0.0.
 echo "Running registry:latest..."
 docker run -it -d --name jenkins-docker-registry -p 5000:5000 -v jenkins-registry-data:/var/lib/registry --restart always registry:latest
 
-echo "Waiting for 15 seconds..."
-sleep 15
+echo "Waiting for 20 seconds..."
+sleep 20
 
 docker build -t myjenkinsagent-jdk11 ./agent/
 docker tag myjenkinsagent-jdk11 localhost:5000/myjenkinsagent-jdk11
