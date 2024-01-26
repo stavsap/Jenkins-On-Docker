@@ -25,6 +25,10 @@ Enter it, Install suggested plugin and create you own admin user.
 
 ### Go to settings and setup a Docker cloud.
 
+There will be no Cloud plugins install after fresh deployment, go to cloud -> plugins and install Docker plugin.
+
+After that, create new Cloud, select type Docker, and enter the follwoing settings:
+
 **Docker Host URI**:
 
 ``` shell
