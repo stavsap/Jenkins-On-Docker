@@ -1,6 +1,6 @@
 # Jenkins on docker infrastructure
 
-The following will setup jenkins and jenkins agents on ubuntu host with docker. (it can work on any host with docker but the scripts are tested on ubuntu).
+The following will setup [jenkins](https://www.jenkins.io/) and jenkins agents on ubuntu host with docker. (it can work on any host with docker but the scripts are tested on ubuntu).
 
 # Automatic Ubuntu deployment
 
