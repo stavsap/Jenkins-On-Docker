@@ -39,6 +39,12 @@ check the **Enabled** and test the connection.
 
 ### Define docker template with the following:
 
+Docker templates are for binding the build process with specific Agent. Jenkins agent is the one that going to perform the actual build. 
+
+In Docker cloud Jenkins agents are also docker container that perform a build. exaples for agets can be found [here](/agent).
+
+To add an agent, add a template in your Docker cloud setting -> docker tempaltes:
+
 **Labels**:
 
 ``` shell
