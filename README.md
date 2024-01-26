@@ -88,6 +88,10 @@ If one desires to use jenkins docker agent that is without docker client, perfor
 apk add --update --no-cache docker
 ```
 
+## Use Git repositories
+
+Follow this [guide](https://dev.to/behainguyen/cicd-06-jenkins-accessing-private-github-repos-using-ssh-keys-313b) to setup SSH connectivity to Git repositories to be able to work with them.
+
 # Manual Setup Steps
 
 ## Clone this repo 
