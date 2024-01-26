@@ -13,6 +13,13 @@ curl -sLS https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-
 ``` shell
 curl -sLS https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-docker-clean-all.sh | bash
 ```
+# Inital Setup
+
+After succesful deployment, open a browser and go to you host ip or localhost http://<host-ip>:8080.
+
+Now you will be requesed for the admin passphrase that you should be able to see im the final log print of the eployment.
+
+Enter it, Install suggested plugin and create you own admin user.
 
 # Setup Docker Cloud
 
