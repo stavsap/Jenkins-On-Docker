@@ -15,7 +15,7 @@ curl -sLS https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-
 ```
 # Inital Setup
 
-After succesful deployment, open a browser and go to you host ip or localhost http://<host-ip>:8080.
+After succesful deployment, open a browser and go to you host ip or localhost http://{host-ip}:8080.
 
 Now you will be requesed for the admin passphrase that you should be able to see im the final log print of the eployment.
 
