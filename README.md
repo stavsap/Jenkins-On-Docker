@@ -93,7 +93,7 @@ The agent we built "**localhost:5000/myjenkinsagent-jdk11**" has a docker client
 
 ### Do the following:
 
-After setting up Docker Cloud with docker template using **localhost:5000/myjenkinsagent-jdk11**, add to docker template settings:
+After setting up Docker Cloud with docker template using **localhost:5000/myjenkinsagent-jdk11**, add to Docker template settings under "Container Settings":
 
 **User**:
 
