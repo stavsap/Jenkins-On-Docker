@@ -1,4 +1,6 @@
-# Jenkins on docker infrastructure
+# Jenkins On Docker Infrastructure
+
+![pic](.meta/jenkins-docker.png)
 
 The following will setup [jenkins](https://www.jenkins.io/) and jenkins agents on ubuntu host with docker. (it can work on any host with docker but the scripts are tested on ubuntu).
 
