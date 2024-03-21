@@ -31,3 +31,4 @@ echo --------------------------------
 
 echo:
 echo All complete, got to http://localhost:8080
+explorer "http://localhost:8080"
