@@ -99,6 +99,7 @@ root
 ``` shell
 type=bind,source=/var/run/docker.sock,destination=/var/run/docker.sock
 ```
+![pic](.meta/docker-container-setup.png)
 
 ## Using docker agent without installed docker client.
 
