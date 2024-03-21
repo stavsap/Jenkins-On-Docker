@@ -23,7 +23,7 @@ curl -sLS https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-
 ### Clean Up
 
 ``` shell
-curl -sLS https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-clean-all-windows.bat && cmd
+curl -o clean.bat https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-clean-all-windows.bat && cmd clean.bat && del clean.bat
 ```
 
 
