@@ -25,9 +25,9 @@ timeout 5 /nobreak
 
 echo:
 echo init admin password:
-echo --------------------
+echo --------------------------------
 docker exec jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
-echo --------------------
+echo --------------------------------
 
 echo:
 echo All complete, got to http://localhost:8080
