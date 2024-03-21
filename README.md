@@ -13,6 +13,20 @@ curl -sLS https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-
 ``` shell
 curl -sLS https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-docker-clean-all.sh | bash
 ```
+
+# Automatic Windows deployment
+
+``` shell
+curl -sLS https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-clean-deploy-windows.bat && cmd
+```
+
+### Clean Up
+
+``` shell
+curl -sLS https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-clean-all-windows.bat && cmd
+```
+
+
 # Inital Setup
 
 After succesful deployment, open a browser and go to you host ip or localhost http://{host-ip}:8080.
