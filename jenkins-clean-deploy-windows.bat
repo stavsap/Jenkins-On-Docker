@@ -1,3 +1,5 @@
+@echo off
+
 git clone https://github.com/stavsap/jenkins-docker.git
 cd jenkins-docker
 
