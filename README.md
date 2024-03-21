@@ -73,6 +73,8 @@ docker-alpine-jdk11
 localhost:5000/myjenkinsagent-jdk11
 ```
 
+![pic](.meta/docker-template-setup.png)
+
 # Build Docker-on-Docker use case
 
 If one desires to build docker images inside docker jenkins agent, do not install docker runtime inside the agent.
