@@ -2,7 +2,7 @@
 
 ![pic](.meta/jenkins-docker.png)
 
-The following will setup [jenkins](https://www.jenkins.io/) and jenkins agents on ubuntu/windows host with docker. (it can work on any host with docker but the scripts are tested on ubuntu).
+The following will setup [jenkins](https://www.jenkins.io/) and jenkins agents on ubuntu/windows host with docker. (it can work on any host with docker but the scripts are tested on ubuntu and windows 10/11).
 
 # Automatic Ubuntu deployment
 
