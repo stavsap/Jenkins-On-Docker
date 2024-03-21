@@ -17,7 +17,7 @@ curl -sLS https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-
 # Automatic Windows deployment
 
 ``` shell
-curl -sLS https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-clean-deploy-windows.bat && cmd
+curl -o deploy.bat https://raw.githubusercontent.com/stavsap/jenkins-docker/main/jenkins-clean-deploy-windows.bat && cmd /c deploy.bat && del deploy.bat
 ```
 
 ### Clean Up
