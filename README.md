@@ -27,11 +27,11 @@ curl -o clean.bat https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/ma
 ```
 
 
-# Inital Setup
+# Initial Setup
 
-After succesful deployment, open a browser and go to you host ip or localhost http://{host-ip}:8080.
+After successful deployment, open a browser and go to you host ip or localhost http://{host-ip}:8080.
 
-Now you will be requesed for the admin passphrase that you should be able to see im the final log print of the eployment.
+Now you will be requested for the admin passphrase that you should be able to see im the final log print of the deployment.
 
 Enter it, Install suggested plugin and create you own admin user.
 
@@ -41,7 +41,7 @@ Enter it, Install suggested plugin and create you own admin user.
 
 There will be no Cloud plugins install after fresh deployment, go to cloud -> plugins and install Docker plugin.
 
-After that, create new Cloud, select type Docker, and enter the follwoing settings:
+After that, create new Cloud, select type Docker, and enter the following settings:
 
 **Docker Host URI**:
 
@@ -104,7 +104,7 @@ type=bind,source=/var/run/docker.sock,destination=/var/run/docker.sock
 
 If one desires to use jenkins docker agent that is without docker client, perform the following:
 
-- setup a docker template with you desired agent, for example **jenkins/agent-jdk11**.
+- set up a docker template with you desired agent, for example **jenkins/agent-jdk11**.
 - In docker template settings change user to "root" (to be able to perform install of packages).
 - In job pipeline add step to install docker client. for example for alpine image agent:
 
@@ -114,7 +114,7 @@ apk add --update --no-cache docker
 
 ## Use Git repositories
 
-Follow this [guide](https://dev.to/behainguyen/cicd-06-jenkins-accessing-private-github-repos-using-ssh-keys-313b) to setup SSH connectivity to Git repositories to be able to work with them.
+Follow this [guide](https://dev.to/behainguyen/cicd-06-jenkins-accessing-private-github-repos-using-ssh-keys-313b) to set up SSH connectivity to Git repositories to be able to work with them.
 
 # Manual Setup Steps
 
