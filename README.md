@@ -51,6 +51,8 @@ tcp://alpine-socat:2375
 
 check the **Enabled** and test the connection.
 
+![pic](.meta/cloud-setup.png)
+
 ### Define docker template with the following:
 
 Docker templates are used to associate the build process with specific agents. The Jenkins agent is responsible for executing the actual build.
