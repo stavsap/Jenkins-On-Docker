@@ -4,28 +4,28 @@
 
 The following will setup [jenkins](https://www.jenkins.io/) and jenkins agents on ubuntu/windows host with docker. (it can work on any host with docker but the scripts are tested on ubuntu and windows 10/11).
 
-# Automatic Ubuntu deployment
+# Linux Host Deployment
 
 ``` shell
-curl -sLS https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenkins-clean-deploy-ubuntu.sh | bash
+curl -sLS https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenkins-docker-deploy-linux.sh | bash
 ```
 
 ### Clean Up
 
 ``` shell
-curl -sLS https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenkins-docker-clean-all.sh | bash
+curl -sLS https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenkins-docker-remove-linux.sh | bash
 ```
 
-# Automatic Windows deployment
+# Windows Host Deployment
 
 ``` shell
-curl -o deploy.bat https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenkins-clean-deploy-windows.bat && cmd /c deploy.bat && del deploy.bat
+curl -o deploy.bat https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenkins-docker-deploy-windows.bat && cmd /c deploy.bat && del deploy.bat
 ```
 
 ### Clean Up
 
 ``` shell
-curl -o clean.bat https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenkins-clean-all-windows.bat && cmd /c clean.bat && del clean.bat
+curl -o clean.bat https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenkins-docker-remove-windows.bat && cmd /c clean.bat && del clean.bat
 ```
 
 
