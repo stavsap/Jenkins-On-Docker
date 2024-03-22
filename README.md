@@ -28,14 +28,13 @@ curl -o deploy.bat https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/m
 curl -o clean.bat https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenkins-docker-remove-windows.bat && cmd /c clean.bat && del clean.bat
 ```
 
-
 # Initial Setup
 
-After successful deployment, open a browser and go to you host ip or localhost http://{host-ip}:8080.
+After successful deployment, open a browser at [http://localhost:8080](http://localhost:8080).
 
 Now you will be requested for the admin passphrase that you should be able to see im the final log print of the deployment.
 
-Enter it, Install suggested plugin and create you own admin user.
+Next, set up your first admin user.
 
 # Setup Docker Cloud
 
