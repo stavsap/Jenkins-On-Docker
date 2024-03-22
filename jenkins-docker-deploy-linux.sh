@@ -1,5 +1,5 @@
-git clone https://github.com/stavsap/jenkins-docker.git
-cd jenkins-docker
+git clone https://github.com/stavsap/Jenkins-On-Docker.git
+cd Jenkins-On-Docker
 
 docker build -t myjenkins-blueocean:2.414.2 .
 docker network create jenkins
