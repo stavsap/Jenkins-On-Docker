@@ -35,6 +35,8 @@ curl -o deploy.bat https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/m
 curl -o clean.bat https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenkins-docker-remove-windows.bat && cmd /c clean.bat && del clean.bat
 ```
 
+**Note**: Verified to be working on Windows 11 using [Docker Desktop](https://www.docker.com/products/docker-desktop/) with the WSL2 backend.
+
 # Initial Setup
 
 After successful deployment, open a browser at [http://localhost:8080](http://localhost:8080).
