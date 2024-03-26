@@ -4,6 +4,8 @@
 
 The following will setup [jenkins](https://www.jenkins.io/) and jenkins agents on host with docker. All the jenkins infrastructure will be inside docker including the build agents.
 
+<a href="https://www.buymeacoffee.com/stavsapq" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="40" width="174"></a>
+
 # Requirements on host
 
 Should be installed:
