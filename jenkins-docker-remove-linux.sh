@@ -1,4 +1,4 @@
-docker rm -f jenkins-blueocean
+docker rm -f jenkins
 docker rm -f alpine-socat
 docker rm -f jenkins-docker-registry
 
