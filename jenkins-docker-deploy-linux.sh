@@ -16,9 +16,10 @@ docker run -it -d --name jenkins-docker-registry -p 5000:5000 -v jenkins-registr
 echo "Waiting for 15 seconds..."
 sleep 15
 
-docker build -t myjenkinsagent-jdk11 ./agent/
-docker tag myjenkinsagent-jdk11 localhost:5000/myjenkinsagent-jdk11
-docker push localhost:5000/myjenkinsagent-jdk11
+echo "Building docker jenkins agent..."
+docker build -t myjenkinsagent-jdk21 ./agent/
+docker tag myjenkinsagent-jdk21 localhost:5000/myjenkinsagent-jdk21
+docker push localhost:5000/myjenkinsagent-jdk21
 
 echo --------------------------------
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
