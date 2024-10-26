@@ -1,4 +1,4 @@
-FROM jenkins/agent:alpine-jdk11 
+FROM jenkins/agent:alpine-jdk21
 USER root
 RUN apk update
 RUN apk add --update --no-cache docker
