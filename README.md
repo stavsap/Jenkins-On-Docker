@@ -6,6 +6,8 @@ The following will setup [jenkins](https://www.jenkins.io/) and jenkins agents o
 
 <a href="https://www.buymeacoffee.com/stavsapq" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="40" width="174"></a>
 
+This will deploy Jenkins `2.48.2` on Docker
+
 # Requirements on host
 
 Should be installed:
@@ -13,7 +15,9 @@ Should be installed:
 - Git
 - Docker
 
-# Linux Host Deployment
+# Linux Host
+
+### Deployment
 
 ``` shell
 curl -sLS https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenkins-docker-deploy-linux.sh | bash
@@ -25,7 +29,9 @@ curl -sLS https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenki
 curl -sLS https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenkins-docker-remove-linux.sh | bash
 ```
 
-# Windows Host Deployment
+# Windows Host
+
+### Deployment
 
 ``` shell
 curl -o deploy.bat https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenkins-docker-deploy-windows.bat && cmd /c deploy.bat && del deploy.bat
