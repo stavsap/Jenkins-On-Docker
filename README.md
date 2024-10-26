@@ -82,13 +82,13 @@ To add an agent, navigate to your Docker Cloud settings and add a template under
 **Labels**:
 
 ``` shell
-docker-alpine-jdk11
+docker-alpine-jdk21
 ```
 
 **Docker Image**:
 
 ``` shell
-localhost:5000/myjenkinsagent-jdk11
+localhost:5000/myjenkinsagent-jdk21
 ```
 
 ![pic](.meta/docker-template-setup.png)
@@ -99,11 +99,11 @@ If one desires to build docker images inside docker jenkins agent, do not instal
 
 Mount the host docker socket into the agent instead and use docker client.
 
-The agent we built "**localhost:5000/myjenkinsagent-jdk11**" has a docker client already.
+The agent we built "**localhost:5000/myjenkinsagent-jdk21**" has a docker client already.
 
 ### Do the following:
 
-After setting up Docker Cloud with docker template using **localhost:5000/myjenkinsagent-jdk11**, add to Docker template settings under "Container Settings":
+After setting up Docker Cloud with docker template using **localhost:5000/myjenkinsagent-jdk21**, add to Docker template settings under "Container Settings":
 
 **User**:
 
