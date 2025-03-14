@@ -23,6 +23,12 @@ Should be installed:
 curl -sLS https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenkins-docker-deploy-linux.sh | bash
 ```
 
+### Update
+
+``` shell
+curl -sLS https://raw.githubusercontent.com/stavsap/Jenkins-On-Docker/main/jenkins-docker-update-linux.sh | bash
+```
+
 ### Clean Up
 
 ``` shell
