@@ -24,6 +24,7 @@ docker push localhost:5000/myjenkinsagent-jdk21
 echo --------------------------------
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 echo --------------------------------
-
+cd ..
+rm -rf Jenkins-On-Docker
 echo ""
 echo "All complete, got to http://localhost:8080"
