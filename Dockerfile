@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.501-jdk21
+FROM jenkins/jenkins:2.522-jdk21
 USER root
 RUN apt-get update && apt-get install -y lsb-release
 RUN curl -fsSLo /usr/share/keyrings/docker-archive-keyring.asc \
@@ -9,4 +9,4 @@ RUN echo "deb [arch=$(dpkg --print-architecture) \
   $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
 RUN apt-get update && apt-get install -y docker-ce-cli
 USER jenkins
-RUN jenkins-plugin-cli --plugins "docker-plugin:1.10.0"
+RUN jenkins-plugin-cli --plugins "docker-plugin:1274.vc0203fdf2e74"
