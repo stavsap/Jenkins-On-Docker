@@ -6,7 +6,7 @@ The following will setup [jenkins](https://www.jenkins.io/) and jenkins agents o
 
 <a href="https://www.buymeacoffee.com/stavsapq" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="40" width="174"></a>
 
-This will deploy Jenkins `2.501` with Docker plugin `1.10.0` on Docker.
+This will deploy Jenkins `2.530` with Docker plugin `1.10.0` on Docker.
 
 # Requirements on host
 
